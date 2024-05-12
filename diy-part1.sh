@@ -11,7 +11,10 @@
 #
 
 # Add a feed source
-sed -i '1i src-git haibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
+# sed -i '1i src-git haibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
+sed -i 'src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
+sed -i 'src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i 'src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 
 # Add app
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
